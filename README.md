@@ -70,6 +70,22 @@ docker build -t ros2-container:<tag> .devcontainer
 docker run --user vscode -v .:/home/vscode/cabrillo_rov_2023 --network host -it ros2-container:<tag>
 ```
 
+## NixOS Setup
+
+If you have NixOS on your computer you don't need a dev container because you can run everything natively.
+
+To setup a development shell with the required packages, run the following command:
+
+```console
+nix develop 
+```
+
+If you want to use a remote machine as a [remote nix builder](https://nixos.org/manual/nix/stable/advanced-topics/distributed-builds), run the following command instead.
+
+```console
+nix develop -j0 --option "builders-use-substitutes" "true"
+```
+
 ## Ubuntu 22.04 Desktop Setup 
 
 If you have Ubuntu 22.04 on your desktop you don't need a dev container because you can run everything natively. Only Ubuntu machines will be able to use hardware and communicate with other machines in the ROS2 network. These instructions assume you have already cloned the repository by following the "Checkout the Code" procedure above.
