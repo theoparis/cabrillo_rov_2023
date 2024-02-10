@@ -48,8 +48,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1707521368,
-        "narHash": "sha256-/34aCiL/Sm4pjmBgbdS7GfC7ptOWw2RHB8Owm8p3Ckk=",
+        "lastModified": 1707524567,
+        "narHash": "sha256-06ChpdriaNBdkyI/dLl6tGRBzI46nNtjEQDJ91H1DjA=",
         "type": "tarball",
         "url": "https://code.theoparis.com/theoparis/nix-ros-overlay/archive/develop.tar.gz"
       },
